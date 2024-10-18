@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+    height: 120px;
+    background-image: url(../../../public/images/for-header-1920px.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.image {
+    width: 248px;
+    height: 69px;
+}
+
+@media screen and (max-width: 1366px) {
+    .header {
+        max-width: 1366px;
+        background-image: url(../../../public/images/for-header-1366px.png);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        max-width: 1024px;
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header {
+        max-width: 360px;
+    }
+}

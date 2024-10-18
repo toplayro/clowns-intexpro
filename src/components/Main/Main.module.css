@@ -1,0 +1,114 @@
+.main {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 0;
+}
+
+.title {
+    max-width: 1620px;
+    width: 100%;
+    height: 100px;
+    background-image: url(../../../public/images/Заголовок.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content {
+    max-width: 1920px;
+    width: 100%;
+    min-height: 720px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 40px;
+}
+
+.list {
+    height: 720px;
+    width: 500px;
+    background-color: #67C9FC;
+    border-radius: 0 30px 30px 0;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding-right: 50px;
+}
+
+.item {
+    width: 400px;
+    height: 200px;
+    border-radius: 24px;
+    border: black solid 4px;
+    background-color: #fff;
+    filter: drop-shadow(6px 6px #67C9FC);
+    font-size: 36px;
+    font-weight: bold;
+    padding: 13px 0 0 23px;
+    transition: 0.2s;
+}
+
+.item:hover {
+    filter: drop-shadow(6px 6px 6px #67C9FC);
+    transform: translate(-6px, -6px)
+}
+
+@media screen and (max-width: 1750px) {
+    .items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list {
+        width: 100%;
+        border-radius: 0;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        justify-content: center;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .title {
+        background-image: url(../../../public/images/Название.png);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .item {
+        width: 300px;
+        height: 150px;
+        font-size: 20px;
+    }
+}
